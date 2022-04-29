@@ -71,5 +71,25 @@ body{
     color: #555;
 }
 
+html{
+    /* font-size: 10px;  */ /* root size , from root, html, element-important for rem(responsive design) */
+    /* 10px/16px(by default) = 0.625 = 62.5%
+    percentage of users browser font-size setting */
+   /*  MANY CSS DEV USE THIS TRICK */
+    font-size: 62.5%;
+}
+
+
+.test{
+    /* width: 1000px; */
+  /*   max-width: 1000px; */
+    background-color: red;
+    padding: 100px;
+    font-size: 2rem;
+    max-width: 50rem;
+    /* 1 rem = 16px by default from browser, but if we change in html, who is parent element
+    it will be, by example, 1rem=10px */
+}
+
 /* at this monent we do not want to choose specific typeface yet 
 and this is initial CSS*/
