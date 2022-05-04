@@ -85,6 +85,39 @@ body{
 
 /* *********GENERAL REUSABLE COMPONENTS***** */
 
+
+/* ********REUSABLE GRID TEMPLATE*********** */
+
+.container{
+    /*    1140px it is very similiar like 1200px*/
+       max-width: 120rem;
+       margin: 0 auto;
+        padding: 0 3.2rem; 
+   }
+   
+   .grid{
+       display: grid;
+       gap: 9.6rem;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .grid--2--cols{
+       grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .grid--3--cols{
+       grid-template-columns: repeat(3, 1fr);
+   }
+   
+   
+   .grid--4--cols{
+       grid-template-columns: repeat(4, 1fr);
+   }
+
+   /* ********END REUSABLE GRID TEMPLATE*********** */
+   
+
+
 .heading-primary{
     font-size: 5.2rem;
     font-weight: 700;
@@ -115,6 +148,8 @@ body{
   background-color: #e67e22;
 }
 
+
+
 .btn--outline:link, 
 .btn--outline:visited{
   background-color: #555;
@@ -138,6 +173,8 @@ body{
 .margin-right-sm{
     margin-right: 1.6rem !important;
 }
+
+
 /* *******HEADER****** */
 
 .header{
@@ -261,5 +298,20 @@ body{
    color: #cf711f;
    font-weight: 700;
 }
+
+/* HOW IT WORKS SECTION */
+
+.section-how{
+    padding: 9.6rem 0;
+    background-color: orangered;
+}
+
+
+/* .section-how div div{
+    padding: 100px;
+    font-size: 50px;
+    background-color: #333;
+}
+ */
 
 
