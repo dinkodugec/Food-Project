@@ -178,8 +178,21 @@ body{
     margin-bottom: 3.2rem;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
 
-.btn:link, .btn:visited{
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn,
+.btn:link, 
+.btn:visited{
     display:inline-block;
     background-color:#e67e22 ;
     color: #fff;
@@ -188,6 +201,11 @@ body{
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
+   
+    /* only for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 
     /* PUT TRANSITION ON ORGINAL "STATE" */
     transition: all 1s ;  /* tranzicija koja traje 1 sek */
@@ -256,6 +274,13 @@ body{
   width: 3rem;
   height: 3rem;
   color:#e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 
